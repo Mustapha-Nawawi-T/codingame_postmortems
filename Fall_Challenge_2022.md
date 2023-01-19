@@ -34,4 +34,4 @@ Once the games are over, the robots will dutifully re-assemble and go back to wo
 
 ### How the game looks like :
 
-<img src="https://raw.githubusercontent.com/Mustapha-Nawawi-T/codingame_postmortems/img/Fall_challenge_2022/looks.png" alt="image looks.png">
+<img src="https://github.com/Mustapha-Nawawi-T/codingame_postmortems/blob/master/img/Fall_challenge_2022/looks.png" alt="image looks.png">
