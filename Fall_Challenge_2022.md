@@ -30,6 +30,7 @@ essentially removing the patches of electronics and revealing the Grass below.
 
 Players control a team of these robots in the midst of a playful competition to see which team can control the most patches of a given scrap field. 
 They do so by marking patches with their team's color, all with the following constraints:
+
 - If robots of both teams end up on the same patch, they must disassemble themselves one for one. 
 The robots are therefore removed from the game, only leaving at most one team on that patch.
 - The robots may not cross the grass, robots that are still on a patch when it is completely recycled must therefore disassemble themselves too.
