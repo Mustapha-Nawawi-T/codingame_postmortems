@@ -86,21 +86,21 @@ so after i simulate the two chromosomes of the two population, i call the getSco
 a didn't need to undo the moves because i was copying the game state each time.
 
 #### selection() :
-    first sort the population from grater score to the lowest score, and pass 10% to the next generation.
+first sort the population from grater score to the lowest score, and pass 10% to the next generation.
 
 #### crossover() :
-    choose two chromosomes from the population given the prayority to ownes with heighest score, and get a random point to crossover the two chromosomes.
-    acording of this point generate two new chromosomes and pass thim to the next generation.
+choose two chromosomes from the population given the prayority to ownes with heighest score, and get a random point to crossover the two chromosomes.
+acording of this point generate two new chromosomes and pass thim to the next generation.
 
 #### mutation() :
-    iterate over the new chromosomes and mutate them with a probability of 5%.
+iterate over the new chromosomes and mutate them with a probability of 5%.
 
 #### swap() :
-    swap the new population with the old population.
-    and repeat the process until the time is over.
+swap the new population with the old population.
+and repeat the process until the time is over.
 
 #### note:
-    for more details about the algorithm you can check this link : https://towardsdatascience.com/introduction-to-genetic-algorithms-including-example-code-e396e98d8bf3
+for more details about the algorithm you can check this link : https://towardsdatascience.com/introduction-to-genetic-algorithms-including-example-code-e396e98d8bf3
 
 # Score function (the most important part) :
 
