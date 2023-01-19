@@ -16,7 +16,7 @@ League : Gold
 
 ## The Game :
 ### Statement from the game page :
-``` 
+
 Each player controls a team of robots.
 
 Robots are deployed in a field of abandoned electronics, 
@@ -35,4 +35,3 @@ They do so by marking patches with their team's color, all with the following co
 The robots are therefore removed from the game, only leaving at most one team on that patch.
 - The robots may not cross the grass, robots that are still on a patch when it is completely recycled must therefore disassemble themselves too.
 Once the games are over, the robots will dutifully re-assemble and go back to work as normal.
-```
