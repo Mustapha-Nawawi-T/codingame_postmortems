@@ -1,6 +1,6 @@
 # postmortem for Fall Challenge 2022
----
-## Results 
+
+## Result
 
 Score : 28.15
 
