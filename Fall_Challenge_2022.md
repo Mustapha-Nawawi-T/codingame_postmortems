@@ -19,14 +19,11 @@ League : Gold
 
 Each player controls a team of robots.
 
-Robots are deployed in a field of abandoned electronics, 
-their purpose is to refurbish patches of this field into functional tech.
+Robots are deployed in a field of abandoned electronics, their purpose is to refurbish patches of this field into functional tech.
 
-The robots are also capable of self-disassembly and self-replication, 
-but they need raw materials from structures called Recyclers which the robots can build.
+The robots are also capable of self-disassembly and self-replication, but they need raw materials from structures called Recyclers which the robots can build.
 
-The structures will recycle everything around them into raw matter, 
-essentially removing the patches of electronics and revealing the Grass below.
+The structures will recycle everything around them into raw matter, essentially removing the patches of electronics and revealing the Grass below.
 
 Players control a team of these robots in the midst of a playful competition to see which team can control the most patches of a given scrap field. 
 They do so by marking patches with their team's color, all with the following constraints:
