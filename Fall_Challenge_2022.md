@@ -31,3 +31,7 @@ Players control a team of these robots in the midst of a playful competition to 
 The robots are therefore removed from the game, only leaving at most one team on that patch.
 - The robots may not cross the grass, robots that are still on a patch when it is completely recycled must therefore disassemble themselves too.
 Once the games are over, the robots will dutifully re-assemble and go back to work as normal.
+
+### How the game looks like :
+
+<img src="https://raw.githubusercontent.com/Mustapha-Nawawi-T/codingame_postmortems/img/Fall_challenge_2022/looks.png" alt="image looks.png">
