@@ -103,5 +103,3 @@ and repeat the process until the time is over.
 for more details about the algorithm you can check this link : https://towardsdatascience.com/introduction-to-genetic-algorithms-including-example-code-e396e98d8bf3
 
 # Score function (the most important part) :
-
-now that
