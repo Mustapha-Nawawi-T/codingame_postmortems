@@ -19,22 +19,8 @@ language : c++
 | school  |  4/104  |
 
 ## The Game :
-### Statement for the game :
 
-Each player controls a team of robots.
-
-Robots are deployed in a field of abandoned electronics, their purpose is to refurbish patches of this field into functional tech.
-
-The robots are also capable of self-disassembly and self-replication, but they need raw materials from structures called Recyclers which the robots can build.
-
-The structures will recycle everything around them into raw matter, essentially removing the patches of electronics and revealing the Grass below.
-
-Players control a team of these robots in the midst of a playful competition to see which team can control the most patches of a given scrap field. They do so by marking patches with their team's color, all with the following constraints:
-
-- If robots of both teams end up on the same patch, they must disassemble themselves one for one. 
-The robots are therefore removed from the game, only leaving at most one team on that patch.
-- The robots may not cross the grass, robots that are still on a patch when it is completely recycled must therefore disassemble themselves too.
-Once the games are over, the robots will dutifully re-assemble and go back to work as normal.
+In this game, players control teams of robots in a field of abandoned electronics. The robots' goal is to refurbish the field by using raw materials from structures called Recyclers, which they can build. The Recyclers convert everything around them into raw matter, revealing the Grass below. The competition is to see which team can control the most patches of the field by marking them with their team's color. However, there are constraints: if robots from both teams are on the same patch, they must disassemble themselves one for one, and robots may not cross the grass. If a robot is still on a patch when it is completely recycled, it must also disassemble itself. After the game, the robots will reassemble and return to work as normal.
 
 ### How the game looks like :
 
