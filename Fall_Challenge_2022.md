@@ -104,3 +104,31 @@ for more details about the algorithm you can check this link : https://towardsda
 
 # Score function (the most important part) :
 
+the goal that each player want to achieve is to get the maximum erie controled, becouse at the end of the game the player with the maximum erie controled win the game.
+so in my score function i used voronoi diagram to get the maximum erie controled, and i used the distance to the line that connect the players erie to solve the problem of
+the robots that in back of the line not contrebute to the voronoi diagram score.
+
+this way each player try to control the maximum erie, but still they dont expand in the start of the game, they go in straight line to the enemy erie, and when they reach the enemy erie they start to expand. but it is good to expand a littel in the start of the game, that give more options to build or spawn robots.
+
+so i added anather factor in the scoring is the number of ceils that the player control, that incourage the robots to take more ceils whene the are in the way to the enemy erie.
+and also make the fight more interesting. becouse this score prevent from losing my ceils.
+
+at the end i stike with this score :
+``` cpp
+    return voronoiScore  * VORONOI_SCORE_WEIGHT 
+         + distanceScore * DISTANCE_SCORE_WEIGHT 
+         + controlScore  * CONTROL_SCORE_WEIGHT;
+```
+
+ehere :
+
+- VORONOI_SCORE_WEIGHT = 1000000.0 (the most important factor)
+- DISTANCE_SCORE_WEIGHT = 1.0 (the third most important factor)
+- CONTROL_SCORE_WEIGHT = 2.0 (the second most important factor)
+
+# Space to emprove :
+    - search and search alot before start coding.
+    - use the time wisely.
+    - creat playground with all tools that help you to debug your code.
+    - use rust.
+    ...
