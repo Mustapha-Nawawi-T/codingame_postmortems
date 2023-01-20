@@ -107,8 +107,7 @@ return voronoiScore  * VORONOI_SCORE_WEIGHT
 This score function allows the algorithm to evaluate the performance of each chromosome and determine the best moves for the player to make. The combination of these factors gives the player the best chance of winning the game by maximizing the area controlled, while also taking into account the distance to the enemy's area and the number of cells controlled by the player.
 
 # Space for the next contests :
-    - Search and research extensively before starting to code. This would allow for a better understanding of the problem and the available solutions, leading to a more efficient and effective implementation.
-    - Use the time wisely. With the limited time available for each turn, it's important to prioritize the most important tasks and optimize the code for speed.
-    - Create a playground with all the tools that help you to debug your code. This could include test cases, visualization tools, and debuggers, which can make it easier to identify and fix bugs in the code.
-    - Use Rust. because why not ?
-    ...
+- Search and research extensively before starting to code. This would allow for a better understanding of the problem and the available solutions, leading to a more efficient and effective implementation.
+- Use the time wisely. With the limited time available for each turn, it's important to prioritize the most important tasks and optimize the code for speed.
+- Create a playground with all the tools that help you to debug your code. This could include test cases, visualization tools, and debuggers, which can make it easier to identify and fix bugs in the code.
+- Use Rust. because why not ?
