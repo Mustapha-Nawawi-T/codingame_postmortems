@@ -1,11 +1,9 @@
 # postmortem for Fall Challenge 2022
-
 link : https://www.codingame.com/contests/fall-challenge-2022
 
 duration : 25 days
 
 ## Result :
-
 Score : 28.15
 
 League : Gold
@@ -19,15 +17,12 @@ language : c++
 | school  |  4/104  |
 
 ## The Game :
-
-In this game, players control teams of robots in a field of abandoned electronics. The robots' goal is to refurbish the field by using raw materials from structures called Recyclers, which they can build. The Recyclers convert everything around them into raw matter, revealing the Grass below. The competition is to see which team can control the most patches of the field by marking them with their team's color. However, there are constraints: if robots from both teams are on the same patch, they must disassemble themselves one for one, and robots may not cross the grass. If a robot is still on a patch when it is completely recycled, it must also disassemble itself. After the game, the robots will reassemble and return to work as normal.
+In this game, players control teams of robots in a field of abandoned electronics. The robots' goal is to refurbish the field by using raw materials from structures called Recyclers, which they can build. The Recyclers convert everything around them into raw matter, revealing the Grass below. The competition is to see which team can control the most patches of the field by marking them with their team's color. However, there are constraints: if robots from both teams are on the same patch, they must disassemble themselves one for one, and robots may not cross the grass. If a robot is still on a patch when it is completely recycled, it must also disassemble itself.
 
 ### How the game looks like :
-
 <img src="https://github.com/Mustapha-Nawawi-T/codingame_postmortems/blob/master/img/Fall_challenge_2022/looks.png" alt="image looks.png">
 
 # The approach :
-
 When I first saw the game, I thought it would be easy to simulate because all the information is provided in the input. However, I soon realized that it is not easy to simulate at all because each player can make multiple actions in a single turn, which increases the number of possible combinations of actions to simulate. I calculated that getting all possible combinations of 10 actions is 10! = 3628800, which is a lot to simulate.
 
 I only have 50ms per turn (1000ms in the first turn) to simulate these combinations. At first, I thought of using a genetic algorithm to solve this problem because it is one of the few algorithms I know how to implement. But then I realized that the enemy is also trying to win the game, and so I abandoned that idea and went for a different approach.
@@ -50,6 +45,7 @@ while (/*continue while i still have time*/) {
 }
 getBestMoves();
 ```
+
 #### initPopulations() :
 The function "initPopulations()" is used to initialize two populations. The first population is a population of the player's moves and the second population is a population of the enemy's moves. All the moves in both populations are generated randomly. This function sets the initial starting point for the genetic algorithm by creating a pool of possible moves for the player and the enemy to select from.
 
@@ -81,7 +77,6 @@ The "swap()" function is used to replace the old population with the new populat
 The process of the genetic algorithm is repeated until a stopping criterion is met, such as reaching a maximum number of iterations or a certain level of fitness. The ultimate goal is to find the best solution, or the best set of moves, that maximizes the player's chances of winning the game.
 
 # Score function (the most important part) :
-
 The score function is an important part of the algorithm because it determines the outcome of the game. The goal of each player is to control the maximum area, as the player with the most controlled area at the end of the game wins.
 
 In this implementation, the score function uses a Voronoi diagram to calculate the maximum area controlled. It also takes into account the distance to the line connecting the players' areas to solve the problem of robots that are behind the line not contributing to the Voronoi diagram score.
